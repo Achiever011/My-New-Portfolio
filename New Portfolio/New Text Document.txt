@@ -1,0 +1,13 @@
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+
+Hero pattern		heropatterns.com	Background texture
+
+Dev icons		devicon.dev		Tech stack icons
+
+Placeholder images	placehold.co		Project images
+
+Illustration		undraw.co		Hero graphic
+
+Icons			phosphoricons.com	Social/contact icons
