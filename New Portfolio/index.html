@@ -6,30 +6,32 @@
     <title>Ejeh Achiever Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ 
+    
 </head>
 <body>
     <header>
         <div class="name"> 
-            <a href="#">&lt;AE /&gt;</a> 
+            <a href="#">&lt;AE/&gt;</a> 
         </div>
         <div class="navigation">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </header>
 
-    <div class="mainBody">
+    <section id="home">
         <div class="firstHalf">
             <div class="available">
                 <div class="beep"></div>
-                <h3>Available for work</h3>
+                <h4>Available for work</h4>
             </div>
-            <h1>Building digital <br> experiences <br> that users love</h1>
+            <h1>Building digital <br> <span class="gradient">experiences</span> <br> that users love</h1>
             <p>Hi, I'm Ejeh Achiever Iduh, a Frontend Developer and <br>
                  UI/UX enthusiast who turns ideas into responsive, <br>
                 accessible, and performant web applications.
@@ -38,12 +40,14 @@
                 <div class="lightBtn">
                     <a href="#portfolio">
                         <img src="Icons/arrow-down (1).svg" alt="">
-                        <h3>View Work</h3>
+                        <p>View Work</p>
                     </a>
                 </div>
                 <div class="darkBtn">
-                    <img src="Icons/telegram-logo.svg" alt="">
-                    <h3>Hire Me</h3>
+                    <a href="#getInTouch">
+                        <img src="Icons/telegram-logo.svg" alt="">
+                        <p>Hire Me</p>
+                    </a>
                 </div>
             </div>
             <div class="techStack">
@@ -68,28 +72,29 @@
                 <p>&lt;/&gt; 1,000+ hours coded</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="aboutMe">
-        <p>ABOUT ME</p>
+    <section id="about">
+        <h4>ABOUT ME</h4>
         <h2>Who am I?</h2>
-        <p>Get to know the deveoper behind the code</p>
-        <div class="firstHalf">
+        <p class="first-child">Get to know the deveoper behind the code</p>
+        <div class="about">
+            <div class="firstHalf">
             <h3>I turn coffee into clean, scalable code <img src="Icons/coffee.svg" alt=""></h3>
             <p>I'm an enthusiast Frontend Web Developer with a keen eye for detil and design. I enjoy turning concepts into responsive, user-friendly web experiences that balance style and functionality. <br>
                 Skilled in HTML, CSS nd JAVASCRIPT, I focus on clean code, performance, and continuous learning. With a passion for UI/UX design, I create simple, accessible interfaces that make the web enjoyable for everyone.
             </p>
             <ul>
                 <li>
-                    <span class="aboutProjects">10+</span>
+                    <h2 class="aboutProjects">10+</h2>
                     <p>Projects Completed</p>
                 </li>
                 <li>
-                    <span class="aboutProjects">100%</span>
+                    <h2 class="aboutProjects">100%</h2>
                     <p>Client Satisfaction</p>
                 </li>
                 <li>
-                    <span class="aboutProjects">24/7</span>
+                    <h2 class="aboutProjects">24/7</h2>
                     <p>Support</p>
                 </li>
             </ul>
@@ -97,16 +102,19 @@
 
         <div class="secondHalf">
             <h3>My Skills</h3>
-            <div class="progressBar">
+            <div class="progressBar"></div>
+            <div class="progressBar"></div>
+            <div class="progressBar"></div>
+            <div class="progressBar"></div>
 
-            </div>
         </div>
-    </div>
+        </div>
+    </section>
 
-    <div class="portfolio">
-        <p>PORTFOLIO</p>
+    <section id="projects">
+        <h4>PORTFOLIO</h4>
         <h2>Featured Projects</h2>
-        <p>Here's some of my work</p>
+        <p class="first-child">Here's some of my work</p>
         <div class="projects">
             <div class="productPreview">
                 <h3>Product Preview</h3>
@@ -147,63 +155,68 @@
                 </ul>
             </div>
         </div>
-    </div>
+    
+    </section>
+        
 
-    <div class="getInTouch">
-        <p>GET IN TOUCH</p>
+    <section id="contact">
+        <h4>GET IN TOUCH</h4>
         <h2>Let's Work Together</h2>
-        <p>Have a project in mind? Let's discuss how I can help bring your ideas to life.</p>
-        <div class="firstHalf">
-            <div class="email">
-                <a href="mailto:ejehachiever6@gmail.com">
-                    <img src="Icons/envelope.svg" alt="Email">
-                    <h3>Email Me</h3>
-                    <p>ejehachiever6@gmail.com</p>
-                </a>
-            </div>
+        <p class="first-child">Have a project in mind? Let's discuss how I can help bring your ideas to life.</p>
+        <div class="contact">
+            <div class="firstHalf">
+                <div class="email">
+                    <a href="mailto:ejehachiever6@gmail.com">
+                        <img src="Icons/envelope.svg" alt="Email">
+                        <h4>Email Me</h4>
+                        <p>ejehachiever6@gmail.com</p>
+                    </a>
+                </div>
 
-            <div class="email">
-                <a href="www.github.com/Achiever011">
-                    <img src="Icons/github-logo.svg" alt="Email">
-                    <h3>GitHub</h3>
-                    <p>github.com/Achiever011</p>
-                </a>
-            </div>
+                <div class="email">
+                    <a href="www.github.com/Achiever011">
+                        <img src="Icons/github-logo.svg" alt="Email">
+                        <h4>GitHub</h4>
+                        <p>github.com/Achiever011</p>
+                    </a>
+                </div>
 
-            <div class="email">
-                <a href="www.linkedin.com/in/ejeh-achiever">
-                    <img src="Icons/linkedin-logo.svg" alt="Email">
-                    <h3>LinkedIn</h3>
-                    <p>linkedin.com/in/ejeh-achiever</p>
-                </a>
-            </div>
+                <div class="email">
+                    <a href="www.linkedin.com/in/ejeh-achiever">
+                        <img src="Icons/linkedin-logo.svg" alt="Email">
+                        <h4>LinkedIn</h4>
+                        <p>linkedin.com/in/ejeh-achiever</p>
+                    </a>
+                </div>
             
-        </div>
-        <div class="secondHalf">
-            <div class="form">
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Your Email">
-                <textarea name="Tell me about your project..." id=""></textarea>
-                <a href="mailto:ejehachiever6@gmail.com"><button>Send Message <img src="Icons/telegram-logo.svg" alt=""></button></a>
+            </div>
+            <div class="secondHalf">
+                <div class="form">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <textarea name="Tell me about your project..." id="text" placeholder="Tell me about your project..." ></textarea>
+                    <a href="mailto:ejehachiever6@gmail.com">Send Message <img src="Icons/telegram-logo.svg" alt=""> </a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <div class="footer">
         <div class="name"> 
-            <a href="#">&lt;AE /&gt;</a> 
+            <a href="#">&lt;AE/&gt;</a> 
+            <p>Building beautiful web experiences</p>
         </div>
 
         <div class="navigation">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
         
-        <div>
+        <div class="footerIcons">
             <ul>
                 <li>
                     <a href="www.github.com/Achiever011" target="_blank">
@@ -224,6 +237,8 @@
         </div>
     </div>
 </body>
+
+<!-- <img src="concept/Screenshot 2026-05-14 000257.png" alt=""> -->
 <footer>
     <p>&copy; 2026 Ejeh Achiever Iduh. All rights reserved.</p>
 </footer>
