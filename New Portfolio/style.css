@@ -31,7 +31,14 @@ header{
     font-weight: 700;
     line-height: 1.2;
     padding: 2% 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
+/* header .scrolled{
+    padding: 30px;      
+    margin-bottom: 0px;
+} */
 
 body{
     padding: 0;
@@ -92,7 +99,10 @@ header li{
 
 #home{
     display: flex;
-        padding: 10% 0 15% 15%;
+    padding: 10% 0 15% 15%;
+    background: -webkit-linear-gradient(top,#162341,#0f172a );
+    /* background-clip: text; */
+    /* -webkit-text-fill-color:transparent; */
     background-color: #162341;
 }
 
@@ -167,7 +177,7 @@ header li{
     height: 17px;
     width: 20px;
     padding: 3px;
-    filter: invert(100%);
+    /* filter: invert(100%); */
     
 }
 .darkBtn img{
@@ -186,6 +196,19 @@ header li{
     width: 40%;
 }
 
+.techStack{
+    display: flex;
+    width: 100%;
+}
+
+.techStack img{
+    width: 16px;
+    height: 16px;
+    filter: invert(60%);}
+.techStack li{
+    margin: 3% 0 0 20%;
+}
+
 
 
 
@@ -197,11 +220,14 @@ header li{
 
 #about h4{
     color: #3882f6;
+    margin-bottom: 2%;
     /* width: 100%; */
     text-align: center;
 }
 .first-child{
     text-align: center;
+    margin-bottom: 2%;
+
 }
 
 #about h2{
@@ -235,12 +261,57 @@ header li{
     width: 10px;
     height: 5px;
     color: #3882f6; */
-    display: inline;
-    width: 8px;
+    display: block;
+    width: 100%;
     height: 8px;
-    background: #10B981;
-    /* border-radius: 50%; */
+    background: #1E293B;
+    border-radius: 15px;
 }
+#about .secondHalf .progressBar1{
+    position: relative;
+    z-index: 100;
+    top: 0;
+    display: block;
+    width: 90%;
+    height: 8px;
+    border-radius: 15px;
+    background: -webkit-linear-gradient(right, #8B5CF6, #3B82F6);
+    border-radius: 15px;
+}
+#about .secondHalf .progressBar2{
+    position: relative;
+    z-index: 100;
+    top: 0;
+    display: block;
+    width: 40%;
+    height: 8px;
+    background: -webkit-linear-gradient(right, #8B5CF6, #3B82F6);
+    border-radius: 15px;
+}
+#about .secondHalf .progressBar3{
+    position: relative;
+    z-index: 100;
+    top: 0;
+    display: block;
+    width: 10%;
+    height: 8px;
+    background: -webkit-linear-gradient(right, #8B5CF6, #3B82F6);
+    border-radius: 15px;
+}
+#about .secondHalf .progressBar4{
+    position: relative;
+    z-index: 100;
+    top: 0;
+    display: block;
+    width: 85%;
+    height: 8px;
+    background: -webkit-linear-gradient(right, #8B5CF6, #3B82F6);
+    border-radius: 15px;
+}
+#about .secondHalf p{
+    margin: 5% 0 0 0;
+} 
+
 
 
 /*      PORTFOLIO PROJECTS SECTION     */
@@ -253,6 +324,8 @@ header li{
 #projects h4{
     color: #3882f6;
     text-align: left;
+    margin-bottom: 2%;
+
 }
 #projects h4:first-child{
     text-align: center;
@@ -313,7 +386,9 @@ header li{
 /*      CONTACT SECTION   */
 #contact{
     background-color: #0f172a;
-    padding: 5% 15% 15% 15%;
+    /* padding: 5% 15% 15% 15%; */
+    padding: 5% 10% 10% 10%;
+
 }
 .contact{
     display: flex;
@@ -322,9 +397,16 @@ header li{
 #contact h4{
     color: #3882f6;
     text-align: left;
+    margin-bottom: 2%;
+
 }
 #contact h4:first-child{
     text-align: center;
+
+}
+#contact .first-child {
+    margin-bottom: 2%;
+
 }
 .productPreview h4:last-child{
     font-size: 15px;
@@ -396,38 +478,55 @@ header li{
 
 /*     FOOTER    */
 .footer{
+
+    overflow: none;
     display: flex;
     background-color: #0a0f1c;
-    padding: 5% 15% 15% 15%;
+    padding: 5% 15% 2% 10%;
+    border: 1px solid #334155;
+    /* width: 74%; */
+    width: auto;
     color: #94A3B8;
 }
 .footer .name{
     width: 30%;
     display: inline-block;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    margin-right: 10%;
 }
 .navigation {
     width: 30%;
-    border: 1px solid red ;
+    /* border: 1px solid red; */
+    margin-right: 15%;
 }
 .footer .navigation ul{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+
+}
+.footer .navigation a{
+    color: #94A3B8;
+
 }
 
-.footer .navigation li{
-    text-align: left;
-    width: 100%;
-    color: white;
-}
 .footerIcons{
+    
     width: 10%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .footerIcons ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
-
+.footerIcons{
+    filter: invert(100%);
+    filter: contrast(10%);
+}
+footer{
+    font-size: smaller;
+    background-color:#0a0f1c;
+    text-align: center;
+    padding: 2%;
+}
 
 
