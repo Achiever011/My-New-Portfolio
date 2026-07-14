@@ -99,7 +99,7 @@ header li{
 
 #home{
     display: flex;
-    padding: 10% 0 15% 15%;
+    padding: 5% 0 15% 15%;
     background: -webkit-linear-gradient(top,#162341,#0f172a );
     /* background-clip: text; */
     /* -webkit-text-fill-color:transparent; */
@@ -209,8 +209,26 @@ header li{
     margin: 3% 0 0 20%;
 }
 
-
-
+.hoursCoded{
+    width: fit-content;
+    background-color: #1E293B;
+    border: 1px solid #334155;
+    padding: 1% 2%;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-self: flex-end;
+    margin: 0px;
+    align-self: flex-start;
+    /* border: 1px solid red; */
+    position: relative;
+    top: 0;
+    /* right: 1000; */
+}
+#home .secondHalf img{
+    margin-top: 0px;
+    /* border: 1px solid red; */
+}
 
 /*      ABOUT ME SECTION      */
 #about{
@@ -527,6 +545,15 @@ footer{
     background-color:#0a0f1c;
     text-align: center;
     padding: 2%;
+    transition: 1s all;
+}
+
+.footerIcons li{
+    transition: all 1s ease;
+}
+.footerIcons li:hover{
+    color: #3882f6;
+    transition: all 1s ease;
 }
 
 
