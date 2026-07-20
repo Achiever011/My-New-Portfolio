@@ -18,7 +18,6 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
-    /* overflow-x: hidden; */
 }
 html{
     font-family: 'Inter', sans-serif;
@@ -50,9 +49,13 @@ body{
 a{
     text-decoration: none;
 }
+a:hover{
+    color: red;
+}
 header a{
     color: white;
 }
+ 
 p{
     color: #94A3B8;
 }
@@ -113,11 +116,10 @@ header li{
 .available{
     display: flex;
     align-items: center;
-    /* width: fit-content; */
     border: 1px solid #334155;
     color: #F8FAFC;
     width: fit-content;
-    height: 20px;
+    height: 15px;
     border-radius: 50px;
     padding: 3%;
     background-color: #1f315a;
@@ -137,7 +139,7 @@ header li{
 }
 .available h4{
     margin-left: 5px;
-    font-weight: 100;
+    font-weight: 300;
 }
 .gradient{
     background: -webkit-linear-gradient(right, #8B5CF6, #3B82F6);
@@ -173,7 +175,7 @@ header li{
 }
 
 .LightDarkBtn img,
-.form img{
+.form img {
     height: 17px;
     width: 20px;
     padding: 3px;
@@ -336,6 +338,7 @@ header li{
 #projects{
     background-color: #0a0f1c;
     padding: 5% 10% 10% 10%;
+    width: 100%; 
 
 }
 
@@ -476,7 +479,11 @@ header li{
     border-radius: 5px;
     background-color: #0f172a;
     border: 1px solid #334155;
+    color: #fff;
 
+}
+.form textarea{
+    color: #fff;
 }
 
 .form textarea{
@@ -556,4 +563,154 @@ footer{
     transition: all 1s ease;
 }
 
+
+
+/*  MEDIA QUERY */
+@media (max-width: 640px) {
+    html{
+        overflow: none;
+        
+        width: 100%;
+    }
+    body{
+        width: 100%;
+        overflow-x: none;
+    }
+    header{
+        width: 100%;
+        
+        margin: 0;
+    }
+    #home{
+        display: block;
+        
+        padding: 10% 5%;
+        
+        
+    }
+    .LightDarkBtn{
+        display: flex;
+        
+    }
+    header .name{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    header .navigation{
+        width: 60%;
+        font-size: 80%;
+        display: flex;
+        justify-items: flex-end;
+    }
+    header .navigation ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    ul {
+       text-align: center;
+       display: flex;
+       /* justify-content: space-between; */
+       border-color: white;
+    }
+    header li{
+       margin: 0 0%;
+       text-align: left;
+       width: 100%;
+       color: white;
+
+    }
+    .firstHalf{
+        display: block;
+        width: 100%; 
+    }
+    .techStack{
+        width: 100%;
+        display: flex;
+        margin: 0px;
+        
+    }
+    #home .secondHalf img{
+        width: 350px;
+        
+    }
+    .about{
+        display: block;
+    }
+    #about h4:first-child {
+        padding: 10% 0% 5% 0%;
+    }
+    .about .secondHalf h3{
+        margin-top: 10%;
+        text-align: center;
+    }
+    #projects{
+        width: 100%;
+        padding: 0%;
+        display: block;
+        overflow-wrap: none;
+        font-size: 120%;
+    }
+    .projects{
+        display: block;
+        width: 100%;
+    }
+    #projects h4:first-child {
+        padding: 10% 0% 5% 0%;
+    }
+    .productPreview{
+        display: block;
+    }
+    .contact{
+        display: block;
+    }
+    #contact h4:first-child {
+        padding: 10% 0% 5% 0%;
+    }
+    .secondHalf{
+        width: 100%;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+    }
+    .footer .name{
+        width: 100%;
+        text-align: center;
+    }
+    .footer .name a{
+        font-size: 150%;
+    }
+    .footer .navigation{
+        width: 100%;
+        margin: 10% 0%;
+    }
+    .footer .navigation ul{
+        width: 100%;
+    }
+    .footerIcons {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .footerIcons img{
+        width: 80%;
+        height: 80%;
+    }
+    #contact .secondHalf img{
+        filter: invert(100%);
+        width: 12%;
+        height: 12%;
+    }
+}
+
+/* Base styles = desktop */
+
+@media (max-width: 1280px) { /* laptop */ }
+@media (max-width: 1024px) { /* tablet landscape */ }
+@media (max-width: 768px)  { /* tablet portrait */ }
+@media (max-width: 640px)  { /* mobile */ }
 
